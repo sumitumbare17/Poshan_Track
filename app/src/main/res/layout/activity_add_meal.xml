@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="245dp"
+        android:layout_height="53dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:drawableLeft="@drawable/meal_28"
+        android:fontFamily="sans-serif-condensed"
+        android:text="  Add Todays Meal"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="345dp"
+            android:layout_height="599dp"
+            android:elevation="30dp"
+            app:cardCornerRadius="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <LinearLayout
+                android:layout_width="373dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/dateTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:background="#FFFF"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:text="Select Date"
+                    android:textSize="22dp" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/f_img"
+                    android:layout_width="148dp"
+                    android:layout_height="152dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/curry"
+                    android:requiresFadingEdge="vertical" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="16dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnCam"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="16dp"
+                            android:background="@drawable/btn_bg"
+                            android:drawableLeft="@drawable/baseline_camera_24"
+                            android:text="Take Photo "
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/btnBrowse"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="16dp"
+                            android:background="@drawable/btn_bg"
+                            android:drawableLeft="@drawable/baseline_folder_24"
+                            android:text="Choose Photo "
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:requiresFadingEdge="vertical"
+                    android:text="Today's Food"
+                    android:textSize="18dp" />
+
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:id="@+id/edt_weight"
+                    android:layout_width="307dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:hint="Enter Food Name"
+                    android:inputType="text" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_submit"
+                    android:layout_width="314dp"
+                    android:layout_height="58dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="Submit"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

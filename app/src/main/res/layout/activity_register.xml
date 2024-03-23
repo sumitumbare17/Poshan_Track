@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nutrients"
+    tools:context=".Login">
+
+
+    <ImageView
+        android:layout_width="689dp"
+        android:layout_height="320dp"
+        android:layout_marginBottom="13dp"
+        android:src="@drawable/nutrients"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.081" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="364dp"
+        android:layout_height="668dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/viewpager_bkg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".78"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="0dp"
+                android:orientation="vertical"
+                android:padding="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="312dp"
+                    android:layout_height="129dp"
+                    android:src="@drawable/register" />
+
+                <EditText
+                    android:id="@+id/sch_name"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bkg"
+                    android:drawableLeft="@drawable/baseline_school_24"
+                    android:drawablePadding="8dp"
+                    android:hint="School Name"
+                    android:inputType="textEmailAddress"
+                    android:padding="8dp" />
+
+                <EditText
+                    android:id="@+id/city"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bkg"
+                    android:drawableLeft="@drawable/baseline_location_city_24"
+                    android:drawablePadding="8dp"
+                    android:hint="City"
+                    android:inputType="textEmailAddress"
+                    android:padding="8dp" />
+
+                <EditText
+                    android:id="@+id/district"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bkg"
+                    android:drawableLeft="@drawable/baseline_business_24"
+                    android:drawablePadding="8dp"
+                    android:hint="District"
+                    android:inputType="textEmailAddress"
+                    android:padding="8dp" />
+
+                <EditText
+                    android:id="@+id/Per_name"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bkg"
+                    android:drawableLeft="@drawable/baseline_person_24"
+                    android:drawablePadding="8dp"
+                    android:hint="Contact person Name"
+                    android:inputType="textEmailAddress"
+                    android:padding="8dp" />
+
+                <EditText
+                    android:id="@+id/reg_email"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bkg"
+                    android:drawableLeft="@drawable/ic_baseline_email_24"
+                    android:drawablePadding="8dp"
+                    android:hint="Contact person Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="8dp" />
+
+
+                <EditText
+                    android:id="@+id/reg_password"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bkg"
+                    android:drawableLeft="@drawable/ic_baseline_security_24"
+                    android:drawablePadding="8dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="8dp" />
+
+
+                <Button
+                    android:id="@+id/reg_button"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:text="Register"
+                    android:textSize="18sp"
+                    app:cornerRadius="30dp" />
+
+                <TextView
+                    android:id="@+id/login_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="Already Have Account ?\n \t\t\t\t\t\t\t Login"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/purple_200"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+                />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.POSHAN_TRACK"
+        tools:targetApi="31">
+
+
+        <activity
+            android:name=".SelectStudent"
+            android:exported="false" />
+
+        <activity android:name=".MealDetailsActivity" />
+        <activity android:name=".BeneficiaryStudentsActivity" />
+
+
+        <activity
+            android:name=".ClassesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddMeal"
+            android:exported="false" />
+
+        <activity android:name=".ChartActivity"
+            android:exported="false">
+        </activity>
+
+
+        <activity
+            android:name=".mealActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GrowthMonitorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".stu_profile"
+            android:exported="false" />
+        <activity
+            android:name=".studentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddStudentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".registerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>
